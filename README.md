@@ -25,7 +25,7 @@
     <h3>calculate_entropy function</h3>
     <p>This function takes bytes of data as argument returns the entropy of file in integer. Using Collection.counter ,
         in-built
-        library of python,
+        library of python.</p>
     <ol>
         <li>calculate the frequency of data and store them in to bases variable</li>
         <li>normalize bases variable by dividing every value with sum of bases</li>
