@@ -22,7 +22,7 @@
         into encrypted file.After that, using entropy method of crpto library calculate the entropy of the file.
     </p>
     <p>Project uses two functions. First one is <b>calculate_entropy</b> and second is <b>main</b> function</p>
-    <img src = "https://github.com/hiteshparate/ITS/blob/main/final_gif.gif" alt="gif of encryption"/>
+    <img src = "https://github.com/hiteshparate/ITS/blob/main/aes_gif.gif" alt="gif of encryption"/>
     <h3>calculate_entropy function</h3>
     <p>This function takes bytes of data as argument returns the entropy of file in integer</p>
     <ol>
