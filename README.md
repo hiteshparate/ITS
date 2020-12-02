@@ -22,7 +22,8 @@
         into encrypted file.After that, using entropy method of crpto library calculate the entropy of the file.
     </p>
     <p>Project uses two functions. First one is <b>calculate_entropy</b> and second is <b>main</b> function</p>
-    <h3>calculate entropy function</h3>
+    <img src = "https://github.com/hiteshparate/ITS/blob/main/final_gif.gif" alt="gif of encryption"/>
+    <h3>calculate_entropy function</h3>
     <p>This function takes bytes of data as argument returns the entropy of file in integer</p>
     <ol>
         <li>calculate the frequency of data and store them in to bases variable</li>
