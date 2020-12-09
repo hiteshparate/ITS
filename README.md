@@ -45,6 +45,7 @@
         <li>close input and output file</li>
         <li>To calculate entropy of the file again open file and read files into data bytes call the function
             <b>calculate_entropy</b> to find entropy values</li>
+        <li>Change the file_name as "7z.dll" or "image.jpg" or "alice29.txt" and run again for different outputs</li>
     </ol>
   
 
