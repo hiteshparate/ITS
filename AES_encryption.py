@@ -24,7 +24,7 @@ def calculate_entropy(data):
     return entropy_value
 
 # open file from directory. If not in directory then give full path to file.
-file_name = r"image.png"
+file_name = r"alice29.txt"
 input_file = open(file_name,"rb")
 #key is selected here randomly of 16 bytes length
 key = get_random_bytes(16)
@@ -54,6 +54,6 @@ output_file = open("encrypted.txt","rb")
 i_f = input_file.read()
 o_f = output_file.read()
 # call calculate_entropy method and print entropy
-print(f'entropy is {calculate_entropy(i_f)}')
-print(f'entropy is {calculate_entropy(o_f)}')
+print(f'entropy of orignial file is {calculate_entropy(i_f)}')
+print(f'entropy of encrypted file is {calculate_entropy(o_f)}')
 
