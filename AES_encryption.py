@@ -20,17 +20,18 @@ def calculate_entropy(data):
     # define distribution using divide every value of bases with total values of bases
     dist = [x/sum(bases.values()) for x in bases.values()]
     # from scipy library use entropy method to calculate entropy with base 2
-    entropy_value = entropy(dist, base=2)
+    entropy_value = entropy(dist, base=2,axis=0)
     return entropy_value
 
-# open file from directory 
-input_file = open("488303.png","rb")
+# open file from directory. If not in directory then give full path to file.
+file_name = r"488303.png"
+input_file = open(file_name,"rb")
 #key is selected here randomly of 16 bytes length
 key = get_random_bytes(16)
 # buffer size is here defined as 64 kb
 buffer_size = 65536 
 #open outputfile as encrypted.bin in write mode
-output_file = open("encrypted.bin", 'wb')
+output_file = open("encrypted.txt", 'wb')
 
 # using CFB mode to create cipher takes argument as key and cipher mode
 cipher = AES.new(key, AES.MODE_CFB)
@@ -48,8 +49,8 @@ input_file.close()
 output_file.close()
 
 # open file in read mode for finding entropy and read as bytes
-input_file = open("alice29.txt","rb")
-output_file = open("encrypted.bin","rb")
+input_file = open(file_name,"rb")
+output_file = open("encrypted.txt","rb")
 i_f = input_file.read()
 o_f = output_file.read()
 # call calculate_entropy method and print entropy
