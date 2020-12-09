@@ -24,7 +24,7 @@ def calculate_entropy(data):
     return entropy_value
 
 # open file from directory. If not in directory then give full path to file.
-file_name = r"488303.png"
+file_name = r"image.png"
 input_file = open(file_name,"rb")
 #key is selected here randomly of 16 bytes length
 key = get_random_bytes(16)
