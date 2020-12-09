@@ -13,10 +13,12 @@
     </ul>
     <h2>Command for installing these libraries and running the program</h2>
     <ul>
+        <li>pip install numpy==1.19.3</li>
         <li>pip install scipy</li>
         <li>pip install crypto</li>
-        <li>python ./AES_encryption.py</li>
+        <li>python AES_encryption.py</li>
     </ul>
+    <p>If you are using spyder IDE then install 3 packages as shown above using Ipython console and then run using F5 button.</p>
     <h2>Description</h2>
     <p>This project takes large input file(image,binary or text) and apply standard AES encrytion algorithm and covert
         into encrypted file.After that, using entropy method of crpto library calculate the entropy of the file.
